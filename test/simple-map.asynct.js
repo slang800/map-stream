@@ -184,9 +184,9 @@ exports ['map will not call end until the callback'] = function (test) {
   })
 }
 
-exports ['emit failures with opts.failures === `ture`'] = function (test) {
+exports ['emit failures with opts.failures === `true`'] = function (test) {
 
-  var err = new Error('INTENSIONAL ERROR')
+  var err = new Error('INTENTIONAL ERROR')
     , mapper =
   map(function () {
     throw err
@@ -203,7 +203,7 @@ exports ['emit failures with opts.failures === `ture`'] = function (test) {
 
 exports ['emit error thrown'] = function (test) {
 
-  var err = new Error('INTENSIONAL ERROR')
+  var err = new Error('INTENTIONAL ERROR')
     , mapper =
   map(function () {
     throw err
@@ -220,7 +220,7 @@ exports ['emit error thrown'] = function (test) {
 
 exports ['emit error calledback'] = function (test) {
 
-  var err = new Error('INTENSIONAL ERROR')
+  var err = new Error('INTENTIONAL ERROR')
     , mapper =
   map(function (data, callback) {
     callback(err)
